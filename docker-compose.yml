@@ -1,0 +1,30 @@
+version: '3.7'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    environment:
+      - discovery.type=single-node
+    ports:
+      - 9200:9200
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.1
+    ports:
+      - 5601:5601
+  service1:
+    build: ./service1
+    volumes:
+      - ./service1:/app
+    ports:
+      - 5003:5003
+  service2:
+    build: ./service2
+    volumes:
+      - ./service2:/app
+    ports:
+      - 5001:5001
+  service3:
+    build: ./service3
+    volumes:
+      - ./service3:/app
+    ports:
+      - 5002:5002
