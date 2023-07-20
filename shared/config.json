@@ -1,7 +1,0 @@
-{
-  "environment": "production",
-  "service1_url": "http://service1:5003",
-  "service2_url": "http://service2:5001",
-  "service3_url": "http://service3:5002",
-  "elasticsearch_url": "http://elasticsearch:9200"
-}
