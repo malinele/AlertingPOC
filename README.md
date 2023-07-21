@@ -19,10 +19,10 @@ Environment-Specific Data Logging: Besides logging general information, I also c
 ## README
 
 ### Quick Start
-1.Clone this repository.
-1.Ensure Docker and Docker Compose are installed on your machine.
-1.Navigate to the root directory of the project in your terminal.
-1.Run docker-compose up to start the services and the Elasticsearch instance.
+1. Clone this repository.
+1. Ensure Docker and Docker Compose are installed on your machine.
+1. Navigate to the root directory of the project in your terminal.
+1. Run docker-compose up to start the services and the Elasticsearch instance.
 1. Run the execution script using python3 script.py to simulate traffic to Service1.
 
 ### Services
