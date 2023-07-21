@@ -29,7 +29,7 @@ Environment-Specific Data Logging: Besides logging general information, I also c
 The services are implemented as Flask applications. Each service exposes a single endpoint that, when invoked, calls a method that executes some logic, logs the execution to Elasticsearch using the shared logging module, and returns a response.
 
 ### Shared Logging Module
-The shared logging module is a Python module that encapsulates the logic for logging data to Elasticsearch. It is imported and used by each service to log the execution of its methods. The module is located in a shared directory that is accessible to all services.
+The shared logging module is a Python module that encapsulates the logic for logging data to Elasticsearch. It is imported and used by each service to log the execution of its methods. The modlue is placed in each service's directory. 
 
 ### Elasticsearch
 The Elasticsearch instance is run as a Docker container and is exposed on port 9200. It is configured to run as a single-node cluster.
